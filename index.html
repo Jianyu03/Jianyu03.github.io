@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="Jianyu Wang">
+  <meta name="author" content="">
 
   <script src="./config_file/jquery-3.6.1.min.js"></script>
   <script src="./config_file/selected.js"></script>
@@ -13,88 +13,148 @@
   <title>About - Jianyu Wang's Homepage</title>
   <link rel="stylesheet" href="./config_file/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
 
+    .container {
+      margin-top: 20px;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+      color: #007bff;
+    }
+
+    .highlight {
+      color: red;
+      font-size: 18px;
+    }
+
+    .table-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .research-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .research-content {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .paper-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .paper-authors {
+      font-size: 16px;
+    }
+
+    .paper-journal {
+      font-size: 14px;
+      font-style: italic;
+      color: gray;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
 
   <div class="container">
-
-    <div class="nav-scroller py-1 mb-2">
-      <hr>
+    <div class="text-center mb-4">
+      <h1 class="section-title">Jianyu Wang (王健宇)</h1>
     </div>
 
-    <div class="row mb-2"></div>
-
-  </div>
-
-  <main role="main" class="container">
-    <div class="row">
-      <div class="col-md-12 blog-main">
-        <h3 class="pb-3 mb-4 font-italic border-bottom">
-          Jianyu Wang | 王健宇
-        </h3>
-        <div class="row">
-          <div class="col-md-3">
-            <img src="./image/jianyu wang.jpg" style="width: 177px; height: 248px;">
-          </div>
-          <div class="col-md-9">
-            <p style="font-family: Arial, sans-serif; color:red; font-size: 18px;"><b>I am interested in pursuing a Direct Ph.D. and am exploring potential positions in 2025 fall.</b></p>
-            <p></p>
-            <b>Undergraduate</b>, Expected Graduation: June 2025<br>
-            <b>Major:</b> Microelectronic Science and Engineering<br>
-            <b>University:</b> <a href="https://english.bit.edu.cn/">Beijing Institute of Technology</a><br>
-            <b>Department:</b> <a href="https://ice.bit.edu.cn/">School of Integrated Circuits and Electronics</a><br>
-            <b>Research Interests:</b> Artificial Intelligence, Robotics, Embedded Systems, and Microelectronics.
-            <p></p>
-            <b>E-mail:</b> jianyu.wang@bit.edu.cn <br>
-            <b>Address:</b> 5 South Zhongguancun Street, Haidian District, Beijing, China
-            <p></p>
-            <a href="https://scholar.google.com/citations?user=IZHivHEAAAAJ&hl">[Google Scholar]</a>
-            <a href="https://github.com/jianyu03">[Github]</a>
-            <a href="./cv/Jianyu_Wang_s_CV_CN.pdf">[Chinese CV]</a>
-          </div>
-        </div>
+    <div class="row mb-4">
+      <div class="col-md-3 text-center">
+        <img src="./image/jianyu wang.jpg" class="profile-img img-fluid" alt="Jianyu Wang" style="width: 177px; height: 248px;">
+      </div>
+      <div class="col-md-9">
+        <p class="highlight"><b>I am interested in pursuing a Direct Ph.D. and am exploring potential positions in 2025 fall.</b></p>
+        <p><b>Undergraduate</b>, Expected Graduation: June 2025<br>
+          <b>Major:</b> Microelectronic Science and Engineering<br>
+          <b>University:</b> <a href="https://english.bit.edu.cn/" target="_blank">Beijing Institute of Technology</a><br>
+          <b>Department:</b> <a href="https://ice.bit.edu.cn/" target="_blank">School of Integrated Circuits and Electronics</a><br>
+          <b>Research Interests:</b> Artificial Intelligence, Robotics, Embedded Systems, and Microelectronics.
+        </p>
+        <p><b>E-mail:</b> jianyu.wang@bit.edu.cn<br>
+          <b>Address:</b> 5 South Zhongguancun Street, Haidian District, Beijing, China
+        </p>
+        <p>
+          <a href="https://scholar.google.com/citations?user=IZHivHEAAAAJ&hl" class="btn btn-primary" target="_blank">Google Scholar</a>
+          <a href="https://github.com/jianyu03" class="btn btn-dark" target="_blank">Github</a>
+          <a href="./cv/Jianyu_Wang_s_CV_CN.pdf" class="btn btn-secondary" target="_blank">Chinese CV</a>
+        </p>
       </div>
     </div>
-  </main>
 
-  <div class="container mt-5">
-    <table class="table">
-      <tbody>
-        <tr>
-          <td>
-            <h4>Research</h4>
-            <p>
-              Our research goal is to enhance the autonomy and generalization of robotic systems in open environments. By leveraging cross-disciplinary knowledge such as deep learning, robotics, and control, our research interests lie in <strong>Embodied Robotics: Spatial-AI perception, Cognitive navigation, Cross-embodiment intelligence</strong>. We have developed a variety of robot systems that operate in structured/semi-structured/field environments. 
-            </p>
-            <p>
-              We are looking for candidates who have strong self-motivation, intense interest in robotic systems, and desire to combine artificial intelligence with practical robotics systems. For prospective students: If you are interested in working with us as a Master/PhD student or internship student, please feel free to contact me.
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="table-container">
+      <h2 class="section-title">Research</h2>
+      <p class="research-content">
+        Our research goal is to enhance the autonomy and generalization of robotic systems in open environments. By leveraging cross-disciplinary knowledge such as deep learning, robotics, and control, our research interests lie in <strong>Embodied Robotics: Spatial-AI perception, Cognitive navigation, Cross-embodiment intelligence</strong>. We have developed a variety of robot systems that operate in structured/semi-structured/field environments.
+      </p>
+      <p class="research-content">
+        We are looking for candidates who have strong self-motivation, intense interest in robotic systems, and desire to combine artificial intelligence with practical robotics systems. For prospective students: If you are interested in working with us as a Master/PhD student or internship student, please feel free to contact me.
+      </p>
+    </div>
 
-  <div class="container mt-5">
-    <table class="table">
-      <tbody>
-        <tr>
-          <td class="col-md-4">
-            <img src="./image/context-aware-example.png" style="width: 177px; height: 248px;">
-          </td>
-          <td class="col-md-8">
-            <h5>Accelerating Robot Learning of Complex and Long-Term Tasks</h5>
-            <p>
-              <a>Guangyan Chen</a>, <a>Haoyang Lu</a>, <a>Te Cui</a>, <a>Mengxiao Hu</a>, <a>Zicai Peng</a>, <a>Tianxing Zhou</a>, <strong>Yufeng Yue*</strong>
-              <br>
-              <em><strong>Arxiv</strong> 2024</em>
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-container mt-5 text-center">
+      <table class="table d-inline-block">
+        <tbody>
+          <tr>
+            <td class="col-md-4">
+              <img src="./image/context-aware-example.png" class="img-fluid" style="width: 177px; height: 248px;">
+            </td>
+            <td class="col-md-8 text-left">
+              <h5 class="paper-title">Accelerating Robot Learning of Complex and Long-Term Tasks</h5>
+              <p class="paper-authors">
+                <a>Guangyan Chen</a>, <a>Haoyang Lu</a>, <a>Te Cui</a>, <a>Mengxiao Hu</a>, <a>Zicai Peng</a>, <a>Tianxing Zhou</a>, <strong>Yufeng Yue*</strong>
+                <br>
+                <span class="paper-journal">Arxiv 2024</span>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Jianyu Wang. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+
   </div>
 
   <script src="./config_file/holder.min.js"></script>
