@@ -75,6 +75,17 @@
       color: gray;
     }
 
+    .publication-info {
+      font-size: 14px;
+    }
+
+    @media (max-width: 576px) {
+      .publication-info {
+        display: block;
+        text-align: left;
+      }
+    }
+
     .footer {
       margin-top: 40px;
       padding: 20px;
@@ -133,7 +144,7 @@
 
     <div class="table-container">
       <h2 class="section-title">Publications</h2>
-      <p class="text-right"><strong><sup>*</sup></strong>Equal contribution <strong><sup>†</sup></strong>Corresponding author</p>
+      <p class="text-right publication-info"><strong><sup>*</sup></strong>Equal contribution <strong><sup>†</sup></strong>Corresponding author</p>
       <!-- Example paper block -->
       <div class="table-container mt-3">
         <div class="row">
