@@ -147,10 +147,11 @@
 
     <div class="table-container">
       <h2 class="section-title">Publications</h2>
+      <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search publications...">
       <p class="text-right publication-info"><strong><sup>*</sup></strong>Equal contributions <strong><sup>†</sup></strong>Corresponding author</p>
       <!-- Example paper block -->
       
-      <div class="table-container mt-3">
+      <div class="table-container mt-3 publication">
         <div class="row">
           <div class="col-md-4 text-center align-middle">
             <img src="./image/pub2.png" class="img-fluid" style="width: auto; height: auto; max-width: 248px; max-height: 320px;">
@@ -170,7 +171,7 @@
         </div>
       </div>
 
-      <div class="table-container mt-3">
+      <div class="table-container mt-3 publication">
         <div class="row">
           <div class="col-md-4 text-center align-middle">
             <img src="./image/pub1.png" class="img-fluid" style="width: auto; height: auto; max-width: 248px; max-height: 320px;">
@@ -189,7 +190,6 @@
           </div>
         </div>
       </div>
-
 
       <!-- Additional paper blocks can be added here -->
     </div>
@@ -211,6 +211,17 @@
   <script src="./config_file/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function(){
+      $("#searchInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".publication").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
